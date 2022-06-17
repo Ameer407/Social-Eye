@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sosho Manage - Dashboard</title>
+    <title>Soshomo - Dashboard</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -25,40 +25,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="bg-gray-800 mb-96">
+  <body class="bg-gray-800">
     <!-- Left sidebar start  -->
     <section
-      class="lg:w-44 md:w-44 w-12 fixed md:pt-3 bg-gray-900"
+      class="lg:w-44 md:w-40 w-11 fixed md:pt-3 bg-gray-900"
       aria-label="Sidebar"
     >
       <div class="overflow-y-auto h-screen rounded dark:bg-gray-800">
         <a href="index.html" class="flex md:mr-5 justify-center mb-5">
-          <img src="Pics/Sunlogo.png" class="w-10" alt="Flowbite Logo" />
+          <img src="Pics/Slogo.png" class="w-10" alt="Flowbite Logo" />
           <span
-            class="self-center text-xl md:block hidden font-Clubby whitespace-nowrap dark:text-white text-slate-300"
+            class="self-center text-xl md:block hidden font-Clubby whitespace-nowrap dark:text-white text-white"
           >
-            Clubby
+            Social Eye
           </span>
         </a>
         <ul class="space-y-5 md:block sm:block justify-center">
           <li>
             <a
               href="#"
-              class="flex justify-around items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700 border focus:border-red-700"
+              class="flex justify-around items-center p-2 text-base font-normal rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
             >
               <img class="w-6" src="Pics/Dashboardicon.png" alt="" />
 
-              <span class=" md:block hidden text-slate-300">Dashboard</span>
+              <span class="md:block hidden text-slate-400">Dashboard</span>
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="flex justify-around p-2  text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
+              class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
             >
               <img class="w-5" src="Pics/Statsicon.png" alt="" />
 
-              <span class=" md:block hidden text-slate-300">Analytics</span>
+              <span class="md:block hidden text-slate-400">Analytics</span>
             </a>
           </li>
           <li>
@@ -67,7 +67,7 @@
               class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
             >
               <img class="w-7" src="Pics/Campicon.png" alt="" />
-              <span class=" md:block hidden text-slate-300">Campaign</span>
+              <span class="md:block hidden text-slate-400">Campaign</span>
             </a>
           </li>
           <li>
@@ -76,7 +76,7 @@
               class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
             >
               <img class="w-7" src="Pics/Docicon.png" alt="" />
-              <span class=" md:block hidden text-slate-300">Documents</span>
+              <span class="md:block hidden text-slate-400">Documents</span>
             </a>
           </li>
           <li>
@@ -85,7 +85,7 @@
               class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
             >
               <img class="w-6" src="Pics/Settingsicon.png" alt="" />
-              <span class=" md:block hidden text-slate-300">Settings</span>
+              <span class="md:block hidden text-slate-400">Settings</span>
             </a>
           </li>
           <li>
@@ -94,18 +94,24 @@
               class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
             >
               <img class="w-6" src="Pics/Signouticon.png" alt="" />
-              <span class=" md:block hidden text-slate-300">Sign-Out</span>
+              <span class="md:block hidden text-slate-400">Sign-Out</span>
             </a>
           </li>
         </ul>
-        <span class="ml-3 bottom-5 absolute text-cyan-50 md:block hidden"
-          >Add new social</span
-        >
+        <img class="h-9 lg:hidden md:hidden ml-1 mt-4 block" src="Pics/Plusicon.png" alt="" />
+        <div class="lg:block md:block hidden">
+          <button
+            class="bg-slate-600 bottom-5 lg:ml-4 md:ml-2 align-middle lg:w-4/5 absolute flex text-cyan-50 py-2 px-4 rounded"
+          >
+            <p class="text-xs md:mt-2">Add New Social</p>
+            <img class="h-9" src="Pics/Plusicon.png" alt="" />
+          </button>
+        </div>
       </div>
     </section>
     <!-- Left sidebar end  -->
     <!-- Main content start  -->
-    <section class="md:ml-40 ml-7">
+    <section class="md:ml-40 ml-6">
       <!-- navbar start here  -->
       <nav
         class="w-full flex flex-wrap items-center justify-between py-4 bg-transparent text-gray-500 hover:text-gray-700 focus:text-gray-700 navbar navbar-expand-lg navbar-light"
@@ -117,37 +123,37 @@
           <div class="flex text-slate-500 px-5 bg-slate-900 rounded-lg">
             <button
               type="button"
-              class="relative inline-flex gap-1 lg:mr-10 md:mr-5 mr-2 items-center w-full py-2 tex rounded-lg"
+              class="relative inline-flex gap-1 lg:mr-8 md:mr-5 mr-2 items-center w-full py-2 tex rounded-lg"
             >
-              <img class="" src="Pics/Fb.png" alt="" />
+              <img class="w-5" src="Pics/Fb.png" alt="" />
               <span class="lg:block hidden">Facebook</span>
             </button>
             <button
               type="button"
               class="relative gap-1 lg:mr-2 md:mr-5 mr-2 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
             >
-              <img class="w-4" src="Pics/Twitter.png" alt="" />
+              <img class="w-5" src="Pics/Twitter.png" alt="" />
               <span class="lg:block hidden">Twitter</span>
             </button>
             <button
               type="button"
               class="relative gap-1 lg:mr-7 md:mr-5 mr-2 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
             >
-              <img class="w-4" src="Pics/Instagram.png" alt="" />
+              <img class="w-5" src="Pics/Instagram.png" alt="" />
               <span class="lg:block hidden">Instagram</span>
             </button>
             <button
               type="button"
               class="relative gap-1 lg:mr-5 md:mr-5 mr-2 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
             >
-              <img class="w-4 pb-1" src="Pics/Linkedin.png" alt="" />
+              <img class="w-5 pb-1" src="Pics/Linkedin.png" alt="" />
               <span class="lg:block hidden">LinkedIn</span>
             </button>
             <button
               type="button"
               class="relative gap-1 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
             >
-              <img class="w-4" src="Pics/Youtube.png" alt="" />
+              <img class="w-5" src="Pics/Youtube.png" alt="" />
               <span class="lg:block hidden">Youtube</span>
             </button>
           </div>
@@ -230,7 +236,7 @@
               >
                 <img
                   src="Pics/Profile-icon.JPG"
-                  class="rounded-full lg:mr-2 md:w-9 w-8"
+                  class="rounded-full lg:mr-2 md:w-9 w-9"
                 />
                 <div class="text-gray-200 md:block hidden">
                   <p>Ameer Ali</p>
@@ -306,7 +312,8 @@
           <p class="text-xs text-slate-500">Comments</p>
         </div>
         <div
-          class="bg-slate-900 p-3 lg:block hidden rounded-md lg:w-56 lg:row-span-3">
+          class="bg-slate-900 p-3 lg:block hidden rounded-md lg:w-56 lg:row-span-3"
+        >
           <div class="flex justify-between mb-5">
             <p>Comments</p>
             <img
@@ -360,11 +367,16 @@
             </div>
             <div>
               <div class="flex mb-3">
-                <img class="w-8 rounded-full mr-3" src="Pics/Hafpic.jpg" alt="" />
+                <img
+                  class="w-8 rounded-full mr-3"
+                  src="Pics/Hafpic.jpg"
+                  alt=""
+                />
                 Dr HafeezUllah
               </div>
               <div class="text-gray-400 text-sm">
-                Proud on your skills. Decent dashboard colouring and great layout..!
+                Proud on your skills. Decent dashboard colouring and great
+                layout..!
               </div>
               <div class="flex gap-20 mt-5">
                 <div class="flex gap-3">
@@ -403,11 +415,15 @@
             </div>
             <div>
               <div class="flex mb-3">
-                <img class="w-8 rounded-full mr-3" src="Pics/Hafpic.jpg" alt="" />
-                Dr HafeezUllah
+                <img
+                  class="w-8 rounded-full mr-3"
+                  src="Pics/dilawarpic.jpg"
+                  alt=""
+                />
+                Dilawar Khan
               </div>
               <div class="text-gray-400 text-sm">
-                Proud on your skills. Decent dashboard colouring and great layout..!
+                A killer dashboard i have ever seen in my life. its so amazing!!!
               </div>
               <div class="flex gap-20 mt-5">
                 <div class="flex gap-3">
@@ -436,7 +452,6 @@
               </div>
               <hr class="my-3" />
             </div>
-            
           </div>
         </div>
         <div class="rounded-md lg:col-span-2">
@@ -471,18 +486,18 @@
                 alt=""
               />
             </div>
-            <hr class=" my-5">
+            <hr class="my-5" />
             <div class="flex justify-between">
               <img class="h-14" src="Pics/Profile-icon.JPG" alt="" />
               <div>
-                <p class="text-sm">Buy Ticket On Discount Price!</p>
+                <p class="text-sm px-5">There is an event tomarrow evening</p>
                 <div class="flex gap-4 text-slate-400">
-                  <p class="text-xs">Posted On</p>
-                  <p class="text-xs">Posted Date</p>
+                  <p class="text-xs px-5">Posted On</p>
+                  <p class="text-xs px-5">Posted Date</p>
                 </div>
                 <div class="flex gap-4 text-slate-500">
-                  <p class="text-xs">Instagram</p>
-                  <p class="text-xs">16 Dec, 2022</p>
+                  <p class="text-xs px-5">Instagram</p>
+                  <p class="text-xs px-5">18 Jun, 2022</p>
                 </div>
               </div>
               <div>
@@ -498,18 +513,18 @@
                 />
               </div>
             </div>
-            <hr class=" my-6">
+            <hr class="my-6" />
             <div class="flex justify-between">
               <img class="h-14" src="Pics/Profile-icon.JPG" alt="" />
               <div>
-                <p class="text-sm">Buy Ticket On Discount Price!</p>
+                <p class="text-sm px-5">Catch me on my channel live today!</p>
                 <div class="flex gap-4 text-slate-400">
-                  <p class="text-xs">Posted On</p>
-                  <p class="text-xs">Posted Date</p>
+                  <p class="text-xs px-5">Posted On</p>
+                  <p class="text-xs px-5">Posted Date</p>
                 </div>
                 <div class="flex gap-4 text-slate-500">
-                  <p class="text-xs">Instagram</p>
-                  <p class="text-xs">16 Dec, 2022</p>
+                  <p class="text-xs px-5">Twitter</p>
+                  <p class="text-xs px-5">25 Jun, 2022</p>
                 </div>
               </div>
               <div>
@@ -525,18 +540,18 @@
                 />
               </div>
             </div>
-            <hr class=" my-6">
+            <hr class="my-6" />
             <div class="flex justify-between">
               <img class="h-14" src="Pics/Profile-icon.JPG" alt="" />
               <div>
-                <p class="text-sm">Buy Ticket On Discount Price!</p>
+                <p class="text-sm px-5">Will Be On Air On BBC News Tonight!</p>
                 <div class="flex gap-4 text-slate-400">
-                  <p class="text-xs">Posted On</p>
-                  <p class="text-xs">Posted Date</p>
+                  <p class="text-xs px-5">Posted On</p>
+                  <p class="text-xs px-5">Posted Date</p>
                 </div>
                 <div class="flex gap-4 text-slate-500">
-                  <p class="text-xs">Instagram</p>
-                  <p class="text-xs">16 Dec, 2022</p>
+                  <p class="text-xs px-5">Facebook</p>
+                  <p class="text-xs px-5">28 Jun, 2022</p>
                 </div>
               </div>
               <div>
@@ -552,10 +567,7 @@
                 />
               </div>
             </div>
-            <hr class=" my-6">
-            
-            
-            
+            <hr class="my-6" />
           </div>
         </div>
         <div class="rounded-md lg:col-span-2">
@@ -567,7 +579,6 @@
             <canvas class="p-2" id="chartDoughnut"></canvas>
           </div>
         </div>
-        
       </section>
     </section>
 
@@ -704,11 +715,7 @@
           {
             label: "My First Dataset",
             data: [300, 50, 100],
-            backgroundColor: [
-              "rgb(133, 105, 241)",
-              "rgb(164, 101, 241)",
-              "rgb(101, 143, 241)",
-            ],
+            backgroundColor: ["Blue", "Red", "Navy"],
             hoverOffset: 4,
           },
         ],
