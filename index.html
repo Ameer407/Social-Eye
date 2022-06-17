@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clubby - Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-800 mb-96">
+    <!-- Left sidebar start  -->
+    <section
+      class="lg:w-44 md:w-44 w-12 fixed md:pt-3 bg-gray-900"
+      aria-label="Sidebar"
+    >
+      <div class="overflow-y-auto h-screen rounded dark:bg-gray-800">
+        <a href="index.html" class="flex md:mr-5 justify-center mb-5">
+          <img src="Pics/Sunlogo.png" class="w-10" alt="Flowbite Logo" />
+          <span
+            class="self-center text-xl md:block hidden font-Clubby whitespace-nowrap dark:text-white text-slate-300"
+          >
+            Clubby
+          </span>
+        </a>
+        <ul class="space-y-5 md:block sm:block justify-center">
+          <li>
+            <a
+              href="#"
+              class="flex justify-around items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700 border focus:border-red-700"
+            >
+              <img class="w-6" src="pics/Dashboardicon.png" alt="" />
+
+              <span class=" md:block hidden text-slate-300">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-around p-2  text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
+            >
+              <img class="w-5" src="pics/Statsicon.png" alt="" />
+
+              <span class=" md:block hidden text-slate-300">Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
+            >
+              <img class="w-7" src="pics/Campicon.png" alt="" />
+              <span class=" md:block hidden text-slate-300">Campaign</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
+            >
+              <img class="w-7" src="pics/Docicon.png" alt="" />
+              <span class=" md:block hidden text-slate-300">Documents</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
+            >
+              <img class="w-6" src="pics/Settingsicon.png" alt="" />
+              <span class=" md:block hidden text-slate-300">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="flex justify-around p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-slate-600 dark:hover:bg-gray-700"
+            >
+              <img class="w-6" src="pics/Signouticon.png" alt="" />
+              <span class=" md:block hidden text-slate-300">Sign-Out</span>
+            </a>
+          </li>
+        </ul>
+        <span class="ml-3 bottom-5 absolute text-cyan-50 md:block hidden"
+          >Add new social</span
+        >
+      </div>
+    </section>
+    <!-- Left sidebar end  -->
+    <!-- Main content start  -->
+    <section class="md:ml-40 ml-7">
+      <!-- navbar start here  -->
+      <nav
+        class="w-full flex flex-wrap items-center justify-between py-4 bg-transparent text-gray-500 hover:text-gray-700 focus:text-gray-700 navbar navbar-expand-lg navbar-light"
+      >
+        <!-- Left elements  -->
+        <div
+          class="container-fluid w-full flex flex-wrap items-center justify-between px-6"
+        >
+          <div class="flex text-slate-500 px-5 bg-slate-900 rounded-lg">
+            <button
+              type="button"
+              class="relative inline-flex gap-1 lg:mr-10 md:mr-5 mr-2 items-center w-full py-2 tex rounded-lg"
+            >
+              <img class="" src="pics/Fb.png" alt="" />
+              <span class="lg:block hidden">Facebook</span>
+            </button>
+            <button
+              type="button"
+              class="relative gap-1 lg:mr-2 md:mr-5 mr-2 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
+            >
+              <img class="w-4" src="pics/Twitter.png" alt="" />
+              <span class="lg:block hidden">Twitter</span>
+            </button>
+            <button
+              type="button"
+              class="relative gap-1 lg:mr-7 md:mr-5 mr-2 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
+            >
+              <img class="w-4" src="pics/Instagram.png" alt="" />
+              <span class="lg:block hidden">Instagram</span>
+            </button>
+            <button
+              type="button"
+              class="relative gap-1 lg:mr-5 md:mr-5 mr-2 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
+            >
+              <img class="w-4 pb-1" src="pics/Linkedin.png" alt="" />
+              <span class="lg:block hidden">LinkedIn</span>
+            </button>
+            <button
+              type="button"
+              class="relative gap-1 inline-flex items-center w-full py-2 text-sm font-medium rounded-lg"
+            >
+              <img class="w-4" src="pics/Youtube.png" alt="" />
+              <span class="lg:block hidden">Youtube</span>
+            </button>
+          </div>
+          <!-- Collapsible wrapper -->
+          <!-- Right elements -->
+          <div class="flex items-center relative">
+            <div class="flex lg:mr-10">
+              <!-- Icon -->
+              <a
+                class="text-gray-500 md:block hidden hover:text-gray-700 focus:text-gray-700 mr-4"
+                href="#"
+              >
+                <img
+                  class="w-7 ring-1 ring-slate-700 p-1 rounded-2xl"
+                  src="pics/Searchicon.png"
+                  alt=""
+                />
+              </a>
+              <a
+                class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4"
+                href="#"
+              >
+                <img
+                  class="w-7 ring-1 ring-slate-700 p-1 rounded-2xl"
+                  src="pics/Brightness.png"
+                  alt=""
+                />
+              </a>
+              <div class="dropdown relative">
+                <a
+                  class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4 dropdown-toggle hidden-arrow flex items-center"
+                  href="#"
+                  id="dropdownMenuButton1"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="w-7 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Noticon.png"
+                    alt=""
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu min-w-max absolute bg-slate-900 z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-100"
+                      href="#"
+                      >Action</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent hover:bg-gray-100"
+                      href="#"
+                      >Another action</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-100"
+                      href="#"
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown relative">
+              <a
+                class="dropdown-toggle flex items-center hidden-arrow"
+                href="#"
+                id="dropdownMenuButton2"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="Pics/Profile-icon.JPG"
+                  class="rounded-full lg:mr-2 md:w-9 w-8"
+                />
+                <div class="text-gray-200 md:block hidden">
+                  <p>Ameer Ali</p>
+                  <p class="text-xs">Front-End Developer</p>
+                </div>
+                <img
+                  class="w-7 ring-1 ring-slate-700 p-2 rounded-3xl mb-5 ml-7 lg:block hidden"
+                  src="pics/Dropicon.png"
+                  alt=""
+                />
+              </a>
+              <ul
+                class="dropdown-menu min-w-max absolute hidden bg-slate-900 text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 m-0 bg-clip-padding border-none left-auto right-0"
+                aria-labelledby="dropdownMenuButton2"
+              >
+                <li>
+                  <a
+                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-100"
+                    href="#"
+                    >Action</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-100"
+                    href="#"
+                    >Another action</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-100"
+                    href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Right elements End -->
+        </div>
+      </nav>
+      <!-- Navbar End  -->
+      <!-- ----------------------------------------->
+      <!-- Grid content starts -->
+      <section class="ml-7 lg:mr-12 mb-10 text-white grid gap-5 lg:grid-cols-5">
+        <div class="bg-slate-900 rounded-md px-5 py-2">
+          <div class="flex justify-between align-middle">
+            <p class="text-xl">2679</p>
+            <img class="h-6 mt-3" src="pics/Followersicon.png" alt="" />
+          </div>
+          <p class="text-xs text-slate-500">Followers</p>
+        </div>
+        <div class="bg-slate-900 rounded-md px-5 py-2">
+          <div class="flex justify-between align-middle">
+            <p class="text-xl">2679</p>
+            <img class="h-6 mt-3" src="pics/Followingicon.png" alt="" />
+          </div>
+          <p class="text-xs text-slate-500">Following</p>
+        </div>
+        <div class="bg-slate-900 rounded-md px-5 py-2">
+          <div class="flex justify-between align-middle">
+            <p class="text-xl">2679</p>
+            <img class="h-6 mt-3" src="pics/Hearticon.png" alt="" />
+          </div>
+          <p class="text-xs text-slate-500">Likes</p>
+        </div>
+        <div class="bg-slate-900 rounded-md px-5 py-2">
+          <div class="flex justify-between align-middle">
+            <p class="text-xl">2679</p>
+            <img class="h-6 mt-3" src="pics/Roundcommenticon.png" alt="" />
+          </div>
+          <p class="text-xs text-slate-500">Comments</p>
+        </div>
+        <div
+          class="bg-slate-900 p-3 lg:block hidden rounded-md lg:w-56 lg:row-span-3">
+          <div class="flex justify-between mb-5">
+            <p>Comments</p>
+            <img
+              class="w-6 ring-1 ring-slate-700 p-1 rounded-xl"
+              src="pics/3-dotsicon.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <div class="flex mb-3">
+              <img class="w-8 rounded-full mr-3" src="pics/Alipic.jpg" alt="" />
+              Ali muhammad
+            </div>
+            <div class="text-gray-400 text-sm">
+              Hey Ameer, I visited your dashboard website and it looks pretty
+              creative..!
+            </div>
+            <div class="flex gap-20 mt-5">
+              <div class="flex gap-3">
+                <img
+                  class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                  src="pics/Likeicon.png"
+                  alt=""
+                />
+                <img
+                  class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                  src="pics/Commenticon.png"
+                  alt=""
+                />
+                <img
+                  class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                  src="pics/Dlticon.png"
+                  alt=""
+                />
+              </div>
+              <button
+                type="button"
+                class="w-36 text-sm font-medium text-gray-400 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:text-slate-300 focus:z-10 focus:ring-4"
+              >
+                See Post
+              </button>
+            </div>
+            <hr class="my-3" />
+            <div class="flex justify-between mb-5">
+              <p>Comments</p>
+              <img
+                class="w-6 ring-1 ring-slate-700 p-1 rounded-xl"
+                src="pics/3-dotsicon.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="flex mb-3">
+                <img class="w-8 rounded-full mr-3" src="pics/Hafpic.jpg" alt="" />
+                Dr HafeezUllah
+              </div>
+              <div class="text-gray-400 text-sm">
+                Proud on your skills. Decent dashboard colouring and great layout..!
+              </div>
+              <div class="flex gap-20 mt-5">
+                <div class="flex gap-3">
+                  <img
+                    class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Likeicon.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Commenticon.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Dlticon.png"
+                    alt=""
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="w-36 text-sm font-medium text-gray-400 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:text-slate-300 focus:z-10 focus:ring-4"
+                >
+                  See Post
+                </button>
+              </div>
+              <hr class="my-3" />
+            </div>
+            <div class="flex justify-between mb-5">
+              <p>Comments</p>
+              <img
+                class="w-6 ring-1 ring-slate-700 p-1 rounded-xl"
+                src="pics/3-dotsicon.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div class="flex mb-3">
+                <img class="w-8 rounded-full mr-3" src="pics/Hafpic.jpg" alt="" />
+                Dr HafeezUllah
+              </div>
+              <div class="text-gray-400 text-sm">
+                Proud on your skills. Decent dashboard colouring and great layout..!
+              </div>
+              <div class="flex gap-20 mt-5">
+                <div class="flex gap-3">
+                  <img
+                    class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Likeicon.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Commenticon.png"
+                    alt=""
+                  />
+                  <img
+                    class="h-6 ring-1 ring-slate-700 p-1 rounded-2xl"
+                    src="pics/Dlticon.png"
+                    alt=""
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="w-36 text-sm font-medium text-gray-400 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:text-slate-300 focus:z-10 focus:ring-4"
+                >
+                  See Post
+                </button>
+              </div>
+              <hr class="my-3" />
+            </div>
+            
+          </div>
+        </div>
+        <div class="rounded-md lg:col-span-2">
+          <p class="">Statics</p>
+          <p class="text-xs text-slate-400 mb-3">
+            Account Information You Have Intered
+          </p>
+          <div class="lg:w-[25rem] md:w-full sm:w-3/5 bg-slate-900 rounded-lg">
+            <canvas class="p-2 chartPie"></canvas>
+          </div>
+        </div>
+        <div class="rounded-md lg:col-span-2">
+          <p class="text-transparent lg:block md:block hidden">Statics</p>
+          <p class="text-xs text-transparent mb-3">
+            Account Information You Have Intered
+          </p>
+          <div class="lg:w-[25rem] md:w-full sm:w-3/5 bg-slate-900 rounded-lg">
+            <canvas class="p-2" id="chartBar"></canvas>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <p class="">Scheduled Posts</p>
+          <p class="text-xs text-slate-400 mb-3">
+            Account Information You Have Intered
+          </p>
+          <div class="bg-slate-900 rounded-md p-3">
+            <div class="flex justify-between">
+              <p>Scheduled Posts</p>
+              <img
+                class="w-6 ring-1 ring-slate-700 p-1 rounded-xl"
+                src="pics/3-dotsicon.png"
+                alt=""
+              />
+            </div>
+            <hr class=" my-5">
+            <div class="flex justify-between">
+              <img class="h-14" src="Pics/Profile-icon.JPG" alt="" />
+              <div>
+                <p class="text-sm">Buy Ticket On Discount Price!</p>
+                <div class="flex gap-4 text-slate-400">
+                  <p class="text-xs">Posted On</p>
+                  <p class="text-xs">Posted Date</p>
+                </div>
+                <div class="flex gap-4 text-slate-500">
+                  <p class="text-xs">Instagram</p>
+                  <p class="text-xs">16 Dec, 2022</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="h-6 mb-2 ring-1 ring-slate-700 p-1 rounded-xl"
+                  src="pics/Editicon.png"
+                  alt=""
+                />
+                <img
+                  class="h-6 ring-1 ring-slate-700 p-1 rounded-xl"
+                  src="pics/Dlticon.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <hr class=" my-6">
+            <div class="flex justify-between">
+              <img class="h-14" src="Pics/Profile-icon.JPG" alt="" />
+              <div>
+                <p class="text-sm">Buy Ticket On Discount Price!</p>
+                <div class="flex gap-4 text-slate-400">
+                  <p class="text-xs">Posted On</p>
+                  <p class="text-xs">Posted Date</p>
+                </div>
+                <div class="flex gap-4 text-slate-500">
+                  <p class="text-xs">Instagram</p>
+                  <p class="text-xs">16 Dec, 2022</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="h-6 mb-2 ring-1 ring-slate-700 p-1 rounded-xl"
+                  src="pics/Editicon.png"
+                  alt=""
+                />
+                <img
+                  class="h-6 ring-1 ring-slate-700 p-1 rounded-xl"
+                  src="pics/Dlticon.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <hr class=" my-6">
+            <div class="flex justify-between">
+              <img class="h-14" src="Pics/Profile-icon.JPG" alt="" />
+              <div>
+                <p class="text-sm">Buy Ticket On Discount Price!</p>
+                <div class="flex gap-4 text-slate-400">
+                  <p class="text-xs">Posted On</p>
+                  <p class="text-xs">Posted Date</p>
+                </div>
+                <div class="flex gap-4 text-slate-500">
+                  <p class="text-xs">Instagram</p>
+                  <p class="text-xs">16 Dec, 2022</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="h-6 mb-2 ring-1 ring-slate-700 p-1 rounded-xl"
+                  src="pics/Editicon.png"
+                  alt=""
+                />
+                <img
+                  class="h-6 ring-1 ring-slate-700 p-1 rounded-xl"
+                  src="pics/Dlticon.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <hr class=" my-6">
+            
+            
+            
+          </div>
+        </div>
+        <div class="rounded-md lg:col-span-2">
+          <p class="">Flow on devices</p>
+          <p class="text-xs text-slate-400 mb-3">
+            Status can help to design post
+          </p>
+          <div class="lg:w-[25rem] md:w-full sm:w-3/5 bg-slate-900 rounded-lg">
+            <canvas class="p-2" id="chartDoughnut"></canvas>
+          </div>
+        </div>
+        
+      </section>
+    </section>
+
+    <!-- Some Out source included files  -->
+    <!-- Likes and comments statics  -->
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart bar -->
+    <script>
+      const labelsBarChart = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+      const dataBarChart = {
+        labels: labelsBarChart,
+        datasets: [
+          {
+            label: "Likes",
+            backgroundColor: "Blue",
+            borderColor: "hsl(252, 82.9%, 67.8%)",
+            data: [2, 40, 5, 2, 20, 30, 45, 15, 25, 50, 20, 15],
+          },
+          {
+            label: "Comments",
+            backgroundColor: "Red",
+            borderColor: "hsl(252, 82.9%, 67.8%)",
+            data: [2, 40, 5, 2, 20, 30, 45, 15, 25, 50, 20, 15],
+          },
+        ],
+      };
+
+      const configBarChart = {
+        type: "bar",
+        data: dataBarChart,
+        options: {},
+      };
+
+      var chartBar = new Chart(
+        document.getElementById("chartBar"),
+        configBarChart
+      );
+    </script>
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart pie -->
+    <script>
+      const dataLine = {
+        labels: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
+        datasets: [
+          // {
+          //   label: "My First Dataset",
+          //   data: [300, 50, 100],
+          //   backgroundColor: [
+          //     "rgb(133, 105, 241)",
+          //     "rgb(164, 101, 241)",
+          //     "rgb(101, 143, 241)",
+          //   ],
+          //   hoverOffset: 4,
+          // },
+          {
+            label: "Followers",
+            data: [80, 59, 80, 56, 55, 65, 59, 80, 81, 56, 55, 40],
+            borderColor: "blue",
+            backgroundColor: ["Blue"],
+          },
+          {
+            label: "Following",
+            data: [60, 50, 70, 46, 65, 75, 49, 70, 61, 86, 80, 50],
+            borderColor: "Red",
+            backgroundColor: ["Red"],
+          },
+        ],
+      };
+
+      const configPie = {
+        type: "line",
+        data: dataLine,
+        options: {},
+      };
+
+      var chartBar = new Chart(
+        document.getElementsByClassName("chartPie"),
+        configPie
+      );
+    </script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Last Component javascript  -->
+    <!-- Required chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart doughnut -->
+    <script>
+      const dataDoughnut = {
+        labels: ["Desktop", "Mobile", "Tablet"],
+        datasets: [
+          {
+            label: "My First Dataset",
+            data: [300, 50, 100],
+            backgroundColor: [
+              "rgb(133, 105, 241)",
+              "rgb(164, 101, 241)",
+              "rgb(101, 143, 241)",
+            ],
+            hoverOffset: 4,
+          },
+        ],
+      };
+
+      const configDoughnut = {
+        type: "doughnut",
+        data: dataDoughnut,
+        options: {},
+      };
+
+      var chartBar = new Chart(
+        document.getElementById("chartDoughnut"),
+        configDoughnut
+      );
+    </script>
+  </body>
+</html>
